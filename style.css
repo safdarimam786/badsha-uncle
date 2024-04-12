@@ -41,7 +41,7 @@ nav ul a {
 nav ul a:hover {
     border-bottom: 2px solid #ffffff;
   }
-  section#home {
+  section#home, #about, #services, #contact {
     height: 100vh;
     display: grid;
     place-items: center;
