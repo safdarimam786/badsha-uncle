@@ -104,6 +104,6 @@ nav ul a:hover {
       height: calc(100vh - 65.18px);
     }
     nav ul a{
-      font-size: 4srem;
+      font-size: 4rem;
     }
   }
