@@ -1,41 +1,69 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #B80000;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --bg-color: #ecf0f1;
+}
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 .container {
-    display: flex;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-header {
-    background-color: #f4f4f4;
-    padding: 20px 0;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
 nav {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.logo {
+    max-width: 150px;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
 .nav-links {
     display: flex;
-    list-style-type: none;
+    list-style: none;
 }
 
 .nav-links li {
@@ -43,79 +71,139 @@ nav {
 }
 
 .nav-links a {
+    color: white;
     text-decoration: none;
-    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
-.hamburger {
-    display: none;
-    cursor: pointer;
+.nav-links a:hover {
+    color: var(--primary-color);
 }
 
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-.section {
-    padding: 50px 0;
-}
-
-.section h2 {
+.hero {
+    background-image: url('https://img.freepik.com/free-vector/coaching-flat-cartoon-concept-with-business-training-scene-vector-illustration_1284-81767.jpg?w=900&t=st=1728310195~exp=1728310795~hmac=b1414c868488a401e4e6fb7ada9cd3dba3a0c2d2ca586a96439bbca69dd4e416');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    
+    align-items: center;
     text-align: center;
-    margin-bottom: 30px;
+    color: white;
+    position: relative;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.card {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
+header > span {
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #B80000;
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin:  10px;
+    margin-top:5px ;
 }
 
-.card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+
+.container {
+    position: relative;
+    z-index: 1100;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+section {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+section:nth-child(even) {
+    background-color: var(--bg-color);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: -20px;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 20px;
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: var(--secondary-color);
 }
 
 footer {
-    background-color: #333;
+    background-color: var(--secondary-color);
     color: white;
+    padding: 3rem 0;
     text-align: center;
-    padding: 20px 0;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
     .nav-links {
-        position: fixed;
-        right: -100%;
-        top: 70px;
+        display: none;
         flex-direction: column;
-        background-color: #f4f4f4;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--secondary-color);
+        padding: 1rem 0;
     }
 
     .nav-links.active {
-        right: 0;
+        display: flex;
     }
 
     .nav-links li {
         margin: 10px 0;
     }
 
-    .hamburger {
-        display: block;
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 }

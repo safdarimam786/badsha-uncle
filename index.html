@@ -4,114 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quality Professional Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <header>
+    <nav>
         <div class="container">
-            <nav>
-                <div class="logo">QPS</div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#vision">Vision</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
+            <img src="https://placehold.co/200x50?text=QPS+Logo" alt="QPS Logo" class="logo">
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#company-profile">Company Profile</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#who-can-apply">Who Can Apply</a></li>
+                <li><a href="#mission">Mission</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container">
+            <h1>Quality Professional Services</h1>
+    
+            <span>iso.qps@gmail.com </span>
+            <span>ISO-CERTIFICATION </span>
+            <span>BADAVAYAPAAR.COM </span>
+            <span>7654120857, 8595115137 </span>
+            <span>Business Training </span>
         </div>
     </header>
 
     <main>
-        <section id="home">
-            <div class="container1">
-                <h1>Quality Professional Services</h1>
-                <p>ISO-CERTIFICATION | BADAVAYAPAAR.COM</p>
-                <p>Business Training | Management Consultant | Business Consultancy</p>
-            </div>
-            <div class="right">
-                right side
-            </div> 
-        </section>
-
-        <section id="about" class="section">
+        <section id="company-profile">
             <div class="container">
-                <h2>About Us</h2>
-                <p>We are in the Business Solution system & management consulting over 15 years. We provide Business training, Management Consultant, and Business consultancy in areas such as Management, Marketing, Sales, Hiring, and Finance.</p>
-            </div>
-            <div>
-                right side
-            </div>
-        </section>
-
-        <section id="services" class="section">
-            <div class="container2">
-                <h2>Our Services</h2>
-                <div class="grid">
-                    <div class="card">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Business Training">
-                        <h3>Business Training</h3>
-                        <p>Learn how to grow your business, retain manpower, and maximize resource utilization.</p>
-                    </div>
-                    <div class="card">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Management Consulting">
-                        <h3>Management Consulting</h3>
-                        <p>Get expert advice on management techniques and strategies.</p>
-                    </div>
-                    <div class="card">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Business Consultancy">
-                        <h3>Business Consultancy</h3>
-                        <p>Receive personalized support and expert consulting services for your business growth.</p>
-                    </div>
-                </div>
+                <h2>COMPANY PROFILE</h2>
+                <p>We are in the Business Solution system & management consulting over 15 years.</p>
+                <p>We provide</p>
+                <ul>
+                    <li>Business training</li>
+                    <li>Management Consultant</li>
+                    <li>Business consultancy</li>
+                </ul>
+                <ul>
+                    <li>Management</li>
+                    <li>Marketing</li>
+                    <li>Sales</li>
+                    <li>Hiring</li>
+                    <li>Finance</li>
+                </ul>
             </div>
         </section>
 
-        <section id="vision" class="section">
-            <div class="container3">
-                <h2>Our Vision</h2>
-                <p>"Unleashing the Power of Indian Businesses"</p>
+        <section id="vision">
+            <div class="container">
+                <h2>OUR VISION</h2>
                 <p>Our vision is to unlock the full potential of Indian businesses, unleashing their power. We envision a future where Indian businesses stand at the forefront of innovation, shaping industries, and making a lasting impact on the economy.</p>
+                <blockquote>"Unleashing the Power of Indian Businesses"</blockquote>
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="who-can-apply">
             <div class="container">
-                <h2>Contact Us</h2>
-                <p>Email: iso.qps@gmail.com</p>
-                <p>Phone: 7654120857, 8595115137</p>
-                <p>Website: BADAVAYAPAAR.COM</p>
+                <h2>WHO CAN APPLY</h2>
+                <ul>
+                    <li>How to grow Business</li>
+                    <li>How to retain manpower/staff</li>
+                    <li>Marketing techniques and strategy</li>
+                    <li>Sales strategy and techniques</li>
+                    <li>Maximum utilization of resources</li>
+                    <li>Product series</li>
+                </ul>
+                <p>We help business professionals overcome their challenges by providing training, personalized support, and expert consulting services.</p>
+                <p>If a Business owner/man takes our services, it will be proved a turning point of his business life:</p>
+                <ul>
+                    <li>Their business will grow exponentially</li>
+                    <li>They can save their time for life</li>
+                    <li>Their business will become on auto mode process</li>
+                    <li>They can open one branch to many branches of their business</li>
+                </ul>
+                <p>Many businessmen face many problems regarding the growth of their business</p>
+            </div>
+        </section>
+
+        <section id="mission">
+            <div class="container">
+                <h2>OUR MISSION</h2>
+                <h3>Empowering Indian Businesses for Success</h3>
+                <p>At Quality Professional Services, we are on a mission to empower Indian businesses and help them. Through our unrivaled expertise, strategic guidance, and valuable resources, we aim to revolutionize the way Indian businesses grow, expand, and establish their unique identity in the face of business competition.</p>
+                <p>Join us as we pave the way for Indian businesses to conquer, redefining possibilities and propelling them to unprecedented levels of growth and success.</p>
+                <blockquote>"Quality Professional Services empowering Indian Businesses for Success."</blockquote>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Quality Professional Services. All rights reserved.</p>
+            <h2>FOR REACHING OUT US</h2>
+            <p>7654120857 | 8595115137</p>
+            <p>BADA VAYAPAAR.COM</p>
+            <p>(Business Training)</p>
+            <p>iso.qps@gmail.com</p>
+            <p>ISO-CERTIFICATION</p>
         </div>
     </footer>
 
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                hamburger.classList.remove('active');
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
