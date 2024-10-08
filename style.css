@@ -50,6 +50,7 @@ nav .container {
     background: none;
     border: none;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .nav-toggle span {
