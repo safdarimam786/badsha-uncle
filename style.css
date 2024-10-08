@@ -178,27 +178,31 @@ footer {
 }
 
 @media (max-width: 768px) {
+    nav{
+        
+    }
     .nav-toggle {
         display: block;
     }
-
+    
     .nav-links {
         display: none;
         
         flex-direction: column;
         position: absolute;
-        top: 100%;
         left: 0;
+        border-radius: 10px;
         right: 0;
         background-color: var(--secondary-color);
         padding: 1rem ;
-        transition: all 0.5;
+        transition: all 5s;
     }
-
+    
     .nav-links.active {
         display: flex;
+        top: 100%;
     }
-
+    
     .nav-links a {
         margin: 10px 15px;
     }
