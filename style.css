@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #ffffff;
+    --primary-color: #000000;
     --secondary-color: #B80000;
     --accent-color: #e74c3c;
     --text-color: #333;
@@ -58,7 +58,7 @@ nav .container {
     height: 3px;
     background-color: white;
     margin: 5px 0;
-    transition: 0.3s;
+    transition:all 0.3s;
 }
 
 .nav-links {
@@ -66,7 +66,7 @@ nav .container {
     list-style: none;
 }
 
-.nav-links li {
+.nav-links a {
     margin-left: 20px;
 }
 
@@ -74,11 +74,13 @@ nav .container {
     color: white;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s;
+    
+    transition: color 0.5s;
 }
 
 .nav-links a:hover {
     color: var(--primary-color);
+    transition: color 0.5s;
 }
 
 .hero {
@@ -103,22 +105,20 @@ nav .container {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
-header > span {
-    width: 20px;
-    display: flex;
-    flex-direction: column;
-    background-color: #B80000;
+.points p{
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 10px;
     padding: 8px 10px;
     border-radius: 8px;
-    margin:  10px;
-    margin-top:5px ;
+    background-color: #B80000;
 }
 
 
 .container {
     position: relative;
-    z-index: 1100;
+    z-index: 1;
 }
 
 h1 {
@@ -188,15 +188,16 @@ footer {
         left: 0;
         right: 0;
         background-color: var(--secondary-color);
-        padding: 1rem 0;
+        padding: 1rem ;
+        transition: all 0.5;
     }
 
     .nav-links.active {
         display: flex;
     }
 
-    .nav-links li {
-        margin: 10px 0;
+    .nav-links a {
+        margin: 10px 15px;
     }
 
     h1 {
