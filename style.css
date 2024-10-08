@@ -33,12 +33,14 @@ nav {
     width: 100%;
     top: 0;
     z-index: 1000;
+    transition: 1s;
 }
 
 nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 1s;
 }
 
 .logo {
@@ -50,7 +52,6 @@ nav .container {
     background: none;
     border: none;
     cursor: pointer;
-    transition: all 0.3s;
 }
 
 .nav-toggle span {
