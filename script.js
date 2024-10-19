@@ -86,3 +86,45 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 });
+
+// Animate social icons
+gsap.from('.social-icon', {
+    opacity: 0,
+    y: 20,
+    duration: 0.5,
+    stagger: 0.1,
+    ease: 'power2.out',
+    scrollTrigger: {
+        trigger: '.social-icons',
+        start: 'top 90%',
+        toggleActions: 'play none none reverse'
+    }
+});
+
+// Animate service items
+gsap.utils.toArray('.service-item').forEach((item, i) => {
+    gsap.from(item, {
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        ease: 'power2.out',
+        scrollTrigger: {
+            trigger: item,
+            start: 'top 80%',
+            toggleActions: 'play none none reverse'
+        }
+    });
+});
+
+// Animate contact form
+gsap.from('.contact-form', {
+    opacity: 0,
+    x: 50,
+    duration: 1,
+    ease: 'power3.out',
+    scrollTrigger: {
+        trigger: '.contact-form',
+        start: 'top 80%',
+        toggleActions: 'play none none reverse'
+    }
+});

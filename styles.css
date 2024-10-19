@@ -1,4 +1,4 @@
-/* :root {
+:root {
     --primary-color: #000000;
     --secondary-color: #B80000;
     --accent-color: #e74c3c;
@@ -10,7 +10,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -86,6 +85,7 @@ nav .container {
     transition: color 0.5s;
 }
 
+
 .hero {
     background-image: url('https://img.freepik.com/free-vector/coaching-flat-cartoon-concept-with-business-training-scene-vector-illustration_1284-81767.jpg?w=900&t=st=1728310195~exp=1728310795~hmac=b1414c868488a401e4e6fb7ada9cd3dba3a0c2d2ca586a96439bbca69dd4e416');
     background-size: cover;
@@ -98,16 +98,6 @@ nav .container {
     color: white;
     position: relative;
 }
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
 .points p{
     display:inline-block;
     align-items: center;
@@ -118,8 +108,17 @@ nav .container {
     background-color: #B80000;
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-.container {
+.hero .container {
     position: relative;
     z-index: 1;
 }
@@ -177,58 +176,112 @@ footer {
     padding: 3rem 0;
     text-align: center;
 }
+
 .social-icons {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
+    color: rgb(255, 255, 255);
 }
 
 .social-icon {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: var(--primary-color);
+    color: white;
+}
+
+/* New styles for About, Services, and Contact pages */
+.page-header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 6rem 0 3rem;
+    text-align: center;
+}
+
+.about-content, .services-content, .contact-content {
+    padding: 4rem 0;
+}
+
+.service-item {
+    margin-bottom: 3rem;
+}
+
+.contact-info, .contact-form {
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
 }
 
 @media (max-width: 768px) {
-
     .nav-toggle {
         display: block;
     }
-    
+
     .nav-links {
         display: none;
-        
         flex-direction: column;
         position: absolute;
+        top: 100%;
         left: 0;
-        border-radius: 10px;
         right: 0;
         background-color: var(--secondary-color);
-        padding: 1rem ;
-        transition: all 5s;
+        padding: 1rem 0;
     }
-    
+
     .nav-links.active {
         display: flex;
-        top: 100%;
     }
-    
-    .nav-links a {
-        margin: 10px 15px;
+
+    .nav-links li {
+        margin: 10px 0;
     }
 
     h1 {
         font-size: 2.5rem;
-        line-height: 1;
-        color: rgb(255, 255, 255);
     }
 
     h2 {
         font-size: 2rem;
     }
-} */
+
+    .contact-content .container {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+}
