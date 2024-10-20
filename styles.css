@@ -145,7 +145,12 @@ section {
 }
 
 section:nth-child(even) {
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
+    background-image: url('/image/23966.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: #ccc;
 }
 
 ul {
@@ -167,7 +172,7 @@ li::before {
 
 blockquote {
     font-style: italic;
-    border-left: 5px solid var(--primary-color);
+    border-left: 5px solid var(--bg-color);
     padding-left: 20px;
     margin: 20px 0;
     font-size: 1.2em;
@@ -211,6 +216,7 @@ footer {
     padding: 3rem 0;
     
 }
+
 .bg{
     padding: 2rem 2rem;
     margin-bottom: 2rem;
@@ -294,5 +300,8 @@ footer {
 
     .contact-info, .contact-form {
         width: 100%;
+    }
+    section:nth-child(even) {
+        font-size: 0.9rem;
     }
 }
