@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // GSAP Animations
   // Animate navbar
-  gsap.from('nav', {
-      y: -100,
-      opacity: 0,
-      duration: 1,
-      ease: 'power3.out'
-  });
+//   gsap.from('nav', {
+//       y: -100,
+//       opacity: 0,
+//       duration: 1,
+//       ease: 'power3.out'
+//   });
 
   // Animate hero content
   gsap.from('.hero .container > *', {
@@ -88,18 +88,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Animate social icons
-gsap.from('.social-icon', {
-    opacity: 0,
-    y: 20,
-    duration: 0.5,
-    stagger: 0.1,
-    ease: 'power2.out',
-    scrollTrigger: {
-        trigger: '.social-icons',
-        start: 'top 90%',
-        toggleActions: 'play none none reverse'
-    }
-});
+// gsap.from('.social-icon', {
+//     opacity: 0,
+//     y: 20,
+//     duration: 0.5,
+//     stagger: 0.1,
+//     ease: 'power2.out',
+//     scrollTrigger: {
+//         trigger: '.social-icons',
+//         start: 'top 90%',
+//         toggleActions: 'play none none reverse'
+//     }
+// });
 
 // Animate service items
 gsap.utils.toArray('.service-item').forEach((item, i) => {
