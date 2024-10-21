@@ -154,7 +154,8 @@ section:nth-child(even) {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type:circle;
+    color: #424242;
     padding-left: 20px;
 }
 
