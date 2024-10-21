@@ -153,8 +153,10 @@ section:nth-child(even) {
     color: #ccc;
 }
 
-ul ::marker {
-    content: "* "; 
+.list ::marker {
+    content: "👉 "; 
+    font-size: larger;
+
     color: #B80000;
     padding-left: 20px;
 }
