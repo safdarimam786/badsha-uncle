@@ -153,9 +153,9 @@ section:nth-child(even) {
     color: #ccc;
 }
 
-ul {
-    list-style-type:circle;
-    color: #424242;
+ul ::marker {
+    content: "* "; 
+    color: #B80000;
     padding-left: 20px;
 }
 
