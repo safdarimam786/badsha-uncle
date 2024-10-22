@@ -209,7 +209,10 @@ footer {
 
 /* New styles for About, Services, and Contact pages */
 .page-header {
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
+    background-image: url( '/image/wave.svg' );
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 6rem 0 3rem;
     text-align: center;
