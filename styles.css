@@ -93,9 +93,10 @@ nav .container {
 .hero {
     background-image: url('https://img.freepik.com/free-vector/coaching-flat-cartoon-concept-with-business-training-scene-vector-illustration_1284-81767.jpg?w=900&t=st=1728310195~exp=1728310795~hmac=b1414c868488a401e4e6fb7ada9cd3dba3a0c2d2ca586a96439bbca69dd4e416');
     /* background:url(image/bg.png) ; */
+    width: 100%;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 92vh;
     display: flex;
     
     align-items: center;
@@ -257,7 +258,7 @@ footer {
 }
 
 .submit-btn {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -267,7 +268,7 @@ footer {
 }
 
 .submit-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: #000;
 }
 
 @media (max-width: 768px) {
@@ -301,6 +302,7 @@ footer {
     h2 {
         font-size: 2rem;
     }
+
 
     .contact-content .container {
         flex-direction: column;
