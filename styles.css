@@ -86,7 +86,7 @@ nav .container {
 
 .nav-links a:hover {
     color: var(--primary-color);
-    transition: color 0.5s;
+    transition: color 1s;
 }
 
 
@@ -94,8 +94,14 @@ a:active
 {
     text-decoration: none;
     outline: 0;
-    color: #000;
+    transition: 1s;
     
+    
+}
+.active {
+
+    border-bottom: 1px solid rgb(255, 255, 255) ;
+     padding-bottom: 5px;
 }
 
 
