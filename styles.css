@@ -90,6 +90,15 @@ nav .container {
 }
 
 
+a:active
+{
+    text-decoration: none;
+    outline: 0;
+    color: #000;
+    
+}
+
+
 .hero {
     background-image: url('https://img.freepik.com/free-vector/coaching-flat-cartoon-concept-with-business-training-scene-vector-illustration_1284-81767.jpg?w=900&t=st=1728310195~exp=1728310795~hmac=b1414c868488a401e4e6fb7ada9cd3dba3a0c2d2ca586a96439bbca69dd4e416');
     /* background:url(image/bg.png) ; */

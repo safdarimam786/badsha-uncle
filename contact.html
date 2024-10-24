@@ -42,13 +42,14 @@
         <section class="contact-content">
             <div class="container">
 
-                <form class="contact-form">
+                <form action="https://api.web3forms.com/submit" class="contact-form">
                     <lord-icon src="https://cdn.lordicon.com/nqisoomz.json" trigger="loop" delay="1000"
                         colors="primary:#121331,secondary:#b80000,tertiary:#b80000,quaternary:#b80000"
                         style="width:60px;height:60px">
                     </lord-icon>
                     <h2>Send us a Message</h2>
                     <div class="form-group">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
                     </div>
