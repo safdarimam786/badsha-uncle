@@ -174,7 +174,8 @@ section:nth-child(even) {
     background-image: url('https://img.freepik.com/free-vector/futuristic-technology-hud-style-concept-background-design_1017-27264.jpg?t=st=1729613316~exp=1729616916~hmac=43807507cba22de6c2b3602590d35ee82a997c8f4addef64416419e0428f20f2&w=1380');
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    font-size: 1.5rem;
+    height: 95vh;
     color: #ccc;
 }
 
@@ -334,6 +335,7 @@ footer {
         width: 100%;
     }
     section:nth-child(even) {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        
     }
 }
