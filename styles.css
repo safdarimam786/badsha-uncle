@@ -191,6 +191,15 @@ section:nth-child(even) {
     color: #ffffff;
 }
 
+#company-profile{
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem 0;
+ 
+  
+}
+
+
 
 .list ::marker {
     content: "➜  "; 
@@ -321,6 +330,12 @@ footer {
         right: 0;
         background-color: var(--secondary-color);
         padding: 1rem 0;
+    }
+    #company-profile{
+     
+
+        flex-wrap: wrap;
+      
     }
 
     .nav-links.active {
