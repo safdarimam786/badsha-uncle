@@ -192,15 +192,18 @@ section:nth-child(even) {
 }
 
 #company-profile{
-    display: flex;
-    justify-content: space-around;
-    margin: 5rem 0;
- 
-  
+    background-image: url('image/green.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
 }
+#who-can-apply{
+    background-image: url('image/apply.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
 
-
-
+}
 .list ::marker {
     content: "➜  "; 
     font-size: larger;
