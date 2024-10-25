@@ -191,8 +191,9 @@ section:nth-child(even) {
     color: #ffffff;
 }
 
+
 .list ::marker {
-    content: "👉 "; 
+    content: "➜  "; 
     font-size: larger;
 
     color: #B80000;
