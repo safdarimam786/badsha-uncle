@@ -181,6 +181,7 @@ h2 {
     color: var(--secondary-color);
 }
 
+
 section {
     padding: 5rem 0;
     background-color: white;
@@ -377,11 +378,15 @@ footer {
     }
 
     h1 {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
+        line-height: 1;
+        margin-top: 2rem;
     }
 
     h2 {
         font-size: 2rem;
+        line-height: 1;
+       
     }
 
 
@@ -395,8 +400,14 @@ footer {
     }
 
     section:nth-child(even) {
+        /* background-color: var(--bg-color); */
+        background-image: url(https://img.freepik.com/free-vector/futuristic-technology-hud-style-concept-background-design_1017-27264.jpg?t=st=1729613316~exp=1729616916~hmac=4380750…&w=1380);
+        background-size: cover;
+        background-position: center;
         font-size: 1rem;
-
+        height: 100vh;
+        color: #ffffff;
     }
-
+    
 }
+
