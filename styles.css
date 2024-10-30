@@ -187,14 +187,14 @@ section {
     background-color: white;
 }
 
-section:nth-child(even) {
+section:nth-child(even) h1{
     /* background-color: var(--bg-color); */
-    background-image: url('https://img.freepik.com/free-vector/futuristic-technology-hud-style-concept-background-design_1017-27264.jpg?t=st=1729613316~exp=1729616916~hmac=43807507cba22de6c2b3602590d35ee82a997c8f4addef64416419e0428f20f2&w=1380');
+    /* background-image: url('https://img.freepik.com/free-vector/futuristic-technology-hud-style-concept-background-design_1017-27264.jpg?t=st=1729613316~exp=1729616916~hmac=43807507cba22de6c2b3602590d35ee82a997c8f4addef64416419e0428f20f2&w=1380');
     background-size: cover;
-    background-position: center;
-    font-size: 1.5rem;
-    height: 80vh;
-    color: #ffffff;
+    background-position: center; */
+    font-size: 3rem;
+
+    color:#9c0505;
 }
 
 #company-profile {
@@ -399,15 +399,6 @@ footer {
         width: 100%;
     }
 
-    section:nth-child(even) {
-        /* background-color: var(--bg-color); */
-        background-image: url(https://img.freepik.com/free-vector/futuristic-technology-hud-style-concept-background-design_1017-27264.jpg?t=st=1729613316~exp=1729616916~hmac=4380750…&w=1380);
-        background-size: cover;
-        background-position: center;
-        font-size: 1rem;
-        height: 100vh;
-        color: #ffffff;
-    }
     
 }
 
