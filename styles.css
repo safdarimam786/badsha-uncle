@@ -4,6 +4,8 @@
     --accent-color: #e74c3c;
     --text-color: #333;
     --bg-color: #ecf0f1;
+    --ai-gradient: linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);
+
 }
 
 * {
@@ -202,6 +204,9 @@ section:nth-child(even) h1{
     background-size: cover;
     background-position: center;
     color: #ffffff;
+}
+.ai{
+   color:linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);
 }
 
 #who-can-apply {
