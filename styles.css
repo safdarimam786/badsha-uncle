@@ -200,6 +200,17 @@ section:nth-child(even) h1{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+section:nth-child(odd) h2{
+    /* background-color: var(--bg-color); */
+    /* background-image: url('https://img.freepik.com/free-vector/futuristic-technology-hud-style-concept-background-design_1017-27264.jpg?t=st=1729613316~exp=1729616916~hmac=43807507cba22de6c2b3602590d35ee82a997c8f4addef64416419e0428f20f2&w=1380');
+    background-size: cover;
+    background-position: center; */
+    font-size: 3rem;
+
+    background: linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
 
 #company-profile {
     background-image: url('image/green.jpg');
