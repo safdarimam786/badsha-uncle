@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #ffffff;
+    --primary-color:#ffffff ;
     --secondary-color: #B80000;
     --accent-color: #e74c3c;
     --text-color: #333;
     --bg-color: #ecf0f1;
-    --ai-gradient: linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);
+    --ai-gradient:linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500) ;
 
 }
 
@@ -100,8 +100,8 @@ nav .container {
 }
 
 .nav-links a:hover {
-    color: var(--primary-color);
-    transition: color 1s;
+    color: black;
+    transition: color 0.3s;
 }
 
 
@@ -196,7 +196,9 @@ section:nth-child(even) h1{
     background-position: center; */
     font-size: 3rem;
 
-    color:#9c0505;
+    background: linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 #company-profile {
@@ -205,9 +207,7 @@ section:nth-child(even) h1{
     background-position: center;
     color: #ffffff;
 }
-.ai{
-   color:linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);
-}
+
 
 #who-can-apply {
     background-image: url('image/apply.jpg');
@@ -239,11 +239,13 @@ li::before {
 
 blockquote {
     font-style: italic;
-    border-left: 5px solid var(--bg-color);
+    border-left: 5px solid var(--secondary-color);
     padding-left: 20px;
     margin-top: 20px;
     font-size: 1.2em;
-    color: var(--secondary-color);
+    background: linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 footer {
@@ -354,7 +356,9 @@ footer {
     text-align: center;
     width: 100%;
     height: auto;
-    background-color: #ccc;
+    background: linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 @media (max-width: 768px) {
