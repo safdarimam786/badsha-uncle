@@ -43,14 +43,14 @@
         <section class="contact-content">
             <div class="container">
 
-                <form action="https://api.web3forms.com/submit" class="contact-form">
+                <!-- <form action="https://api.web3forms.com/submit" method="post" class="contact-form">
                     <lord-icon src="https://cdn.lordicon.com/nqisoomz.json" trigger="loop" delay="1000"
                         colors="primary:#121331,secondary:#b80000,tertiary:#b80000,quaternary:#b80000"
                         style="width:60px;height:60px">
                     </lord-icon>
                     <h2>Send us a Message</h2>
                     <div class="form-group">
-                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="access_key" value="f306f4bb-829f-48ee-aeaf-b6ab4a95f4e9">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required placeholder="for example Hamza ali">
                     </div>
@@ -62,7 +62,34 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
-                    <button type="submit" class="submit-btn" >Send Message</button>
+                    <button type="submit" class="submit-btn "  >Send Message</button>
+                </form> -->
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <lord-icon src="https://cdn.lordicon.com/nqisoomz.json" trigger="loop" delay="1000"
+                    colors="primary:#121331,secondary:#b80000,tertiary:#b80000,quaternary:#b80000"
+                    style="width:60px;height:60px">
+                </lord-icon>
+                <h2>Send us a Message</h2>
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="f306f4bb-829f-48ee-aeaf-b6ab4a95f4e9">
+
+                    <!-- Form Inputs. Each input must have a name="" attribute -->
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email" id="email">Email</label>
+                        <input type="email" name="email" required>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <!-- Custom Confirmation / Success Page -->
+                        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Form</button>
+
                 </form>
 
                 <div class="contact-info">
@@ -72,7 +99,7 @@
                     <h2>Get in Touch</h2>
                     <p> <i class="fas fa-phone"></i>&nbsp; &nbsp; 7654120857 | 8595115137</p>
                     <p> <i class="fas fa-envelope"></i>&nbsp; &nbsp; iso.qps@gmail.com</p>
-                    <p> <i class="fas fa-map-marker-alt"></i>&nbsp; &nbsp;  Ghaziabad (U.P)</p>
+                    <p> <i class="fas fa-map-marker-alt"></i>&nbsp; &nbsp; Ghaziabad (U.P)</p>
                 </div>
 
 
