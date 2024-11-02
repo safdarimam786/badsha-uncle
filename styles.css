@@ -429,5 +429,8 @@ footer {
     .contact-info{
         font-size: 1rem;
     }
+    section:nth-child(odd) h2{
+        font-size: 2.3rem;
+    }
 }
 
