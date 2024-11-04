@@ -342,6 +342,9 @@ footer {
     display: block;
     margin-bottom: 0.5rem;
 }
+.red{
+    color: #B80000;
+}
 
 .form-group input,
 .form-group textarea {
