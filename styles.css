@@ -435,5 +435,8 @@ footer {
     section:nth-child(odd) h2{
         font-size: 2.3rem;
     }
+    .center{
+        font-size: 0.8rem;
+    }
 }
 
